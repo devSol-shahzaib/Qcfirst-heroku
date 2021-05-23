@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add course</title>
+    <link rel="stylesheet" href="/css/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <nav class="custom-nav">
+        <div class="container">
+          <a href="/student-homepage" class="navlink-logo"
+            ><img src="/images/qcfirst.jpeg" alt="qcfirst-img"
+          /></a>
+          <button onclick="togglemenu()" class="burger-menu">
+            Menu <i class="fas fa-bars"></i>
+          </button>
+          <div id="toggleMenu" class="nav-items">
+            <button onclick="logout()" class="nav-links nav-links-btn">
+              logout
+            </button>
+          </div>
+        </div>
+      </nav>
+    <div class="container">
+        <h1 class="main-heading">Instructors</h1>
+        <div class="handle-overflow">
+          <table class="list-table">
+            <tr>
+            <th>unique id</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>email</th>
+            <th>password</th>
+            </tr>
+            <tbody id="instructorList"></tbody>
+          </table>
+        </div>
+        <h1 class="main-heading">Courses</h1>
+        <div class="handle-overflow">
+          <table class="list-table">
+            <tr>
+            <th>unique id</th>
+            <th>semester</th>
+            <th>Course Name</th>
+            <th>Department</th>
+            <th>Added By</th>
+            <th>schedule</th>
+            <th>capacity</th>
+            <th>deadline</th>
+            </tr>
+            <tbody id="courseList"></tbody>
+          </table>
+        </div>
+        <h1 class="main-heading">Students</h1>
+        <div class="handle-overflow">
+          <table class="list-table">
+            <tr>
+            <th>unique id</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>email</th>
+            <th>password</th>
+            </tr>
+            <tbody id="studentList"></tbody>
+          </table>
+        </div>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/9e28beb911.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/js/Jquery.min.js"></script>
+    <script src="/js/main.js"></script>
+    <script src="/js/admin.dashboard.js"></script>
+  </body>
+</html>
